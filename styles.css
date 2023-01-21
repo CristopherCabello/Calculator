@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+section {
+ background: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #e0e0e0;
+  width: 90%;
+  height: 540px;
+  max-width: 350px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  box-shadow: -8px -2px 14px #0e1116d7, -5px -5px 25px #555657;
+  overflow: hidden;
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 45px;
+  position: relative;
+}
+.display-2 {
+  overflow: hidden;
+}
+.display-1 {
+  opacity: 0.8;
+  font-size: 15px;
+  height: 30px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.border {
+  height: 80px;
+  width: 84%;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #e0e0e0;
+  font-size: 35px;
+  box-shadow: inset 2px 2px 7px #949494, inset -2px -5px 7px #ffffff;
+}
+
+.all-button {
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(4, minmax(67px, 1fr)) / repeat(4, minmax(50px, 1fr));
+  gap: 0.7rem;
+  transform: translateY(1.5rem);
+  place-items: center;
+}
+
+.button {
+  height: 60px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  box-shadow: 5px 5px 10px #8a8a8a, -5px -5px 255px #ececec;
+}
+
+.button:hover {
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  color: rgb(12, 12, 12);
+  transition: 0.8s;
+}
+
+.btn-0 {
+  grid-column: 2/3;
+}
